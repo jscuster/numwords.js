@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Number To Words Tester</title>
+</head>
+<body>
+<table>
+<tr>
+<td><label for="num">Number</label></td>
+<td><input type="text" id="num"></td>
+</tr><tr>
+<td><input type="button" value="convert" id="convert"></td>
+<td><input type="button" value="convert, no punctuation" id="convertNoPunc"></td>
+</tr></table>
+
+<script type="text/javascript" src="numwords.js"></script>
+<script type="text/javascript">
+window.onload = function() {
+//convert, adding punctuation.
+document.getElementById("convert").onclick = function() {
+var n = document.getElementById("num");
+n.value = number2Words(n.value * 1); //get value, convert to integer.
+}; //convert.click
+
+//convert, skip punctuation.
+document.getElementById("convertNoPunc").onclick = function() {
+var n = document.getElementById("num");
+n.value = number2Words(n.value * 1, true); //get value, convert to integer.
+}; //convert.click
+}; //ready function
+</script>
+</body>
+</html>

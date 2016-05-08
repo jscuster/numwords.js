@@ -2,13 +2,20 @@
 
 ### By Jason Custer
 
-This script takes any number and converts it into its word form. For example: 123 becomes one hundred twenty three.
+This script takes any number and converts it into its word form. For example: 123 becomes one hundred twenty three. This script does not depend on javascript's large integer limit. The highest number this script can convert is
+
+999999999999999999999999999999999999999999999999999999999999999999
+
+For those who are interested, that comes out to be:
+	nine hundred ninety nine vigintillion, nine hundred ninety nine novemdecillion,, nine hundred ninety nine octodecillion,, nine hundred ninety nine septendecillion,, nine hundred ninety nine sexdecillion,, nine hundred ninety nine quindecillion,, nine hundred ninety nine quattuordecillion,, nine hundred ninety nine tredecillion,, nine hundred ninety nine duodecillion,, nine hundred ninety nine undecillion,, nine hundred ninety nine decillion,, nine hundred ninety nine nonillion,, nine hundred ninety nine octillion,, nine hundred ninety nine septillion,, nine hundred ninety nine sextillion,, nine hundred ninety nine quintillion,, nine hundred ninety nine quadrillion,, nine hundred ninety nine trillion,, nine hundred ninety nine billion,, nine hundred ninety nine million, nine hundred ninety nine thousand, nine hundred ninety nine.
 
 To use, load the script, then call number2Words with the number. Returns a string. 
 
 ###### Example:
 
 	var answer = number2Words(1234321);
+
+For a more complete example, see the test html, "numwords.html".
 
 Enjoy!
 

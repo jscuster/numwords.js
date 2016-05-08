@@ -10,7 +10,7 @@ groups = [],
 allReady = false,
 
 prepareWords = function() {
-names = "one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen twenty thirty fourty fifty sixty seventy eighty ninety thousand million billion".split(" ");
+names = "one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen twenty thirty fourty fifty sixty seventy eighty ninety thousand million billion, trillion, quadrillion, quintillion, sextillion, septillion, octillion, nonillion, decillion, undecillion, duodecillion, tredecillion, quattuordecillion, quindecillion, sexdecillion, septendecillion, octodecillion, novemdecillion, vigintillion".split(" ");
 //set up ones.
 for (var i = 0; i < 19; i++) {
 ones[i] = names[i];

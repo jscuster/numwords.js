@@ -18,13 +18,13 @@ window.onload = function() {
 //convert, adding punctuation.
 document.getElementById("convert").onclick = function() {
 var n = document.getElementById("num");
-n.value = number2Words(n.value * 1); //get value, convert to integer.
+n.value = number2Words(n.value); //get value, convert to integer.
 }; //convert.click
 
 //convert, skip punctuation.
 document.getElementById("convertNoPunc").onclick = function() {
 var n = document.getElementById("num");
-n.value = number2Words(n.value * 1, true); //get value, convert to integer.
+n.value = number2Words(n.value, true); //get value, convert to integer.
 }; //convert.click
 }; //ready function
 </script>

@@ -1,6 +1,6 @@
 # Number To Words (numwords.js) #
 
-### By Jason Custer
+### By Jason Custer ###
 
 This script takes any number and converts it into its word form. For example: 123 becomes one hundred twenty three. This script does not depend on javascript's large integer limit. The highest number this script can convert is
 

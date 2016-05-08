@@ -70,7 +70,7 @@ ptr++;
 if (ptr >= groups.length) ptr--;
 r = tmp + " " + r;
 } //i
-return r;
+return r.trim();
 }; //getWords
 
 prepareWords();

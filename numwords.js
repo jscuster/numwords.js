@@ -40,14 +40,18 @@ res[i][j] = x[ptr--] * 1;
 return res;
 }, //splitNumber
 
-get3Words = function(x) {
-var r = "";
-if (x[0] > 0) r=r + ones[x[0]-1] + " hundred";
+get3Words = function(x, skipPunctuation) {
+var r = "",
+splt = skipPunctuation ? " " : "-";
+if (x[0] > 0) r=r + ones[x[0]-1] + " hundred ";
 if (x[1] === 1) {
-r = r + " " + ones[x[2] + 9];
+r = r + ones[x[2] + 9];
 } else {
-if (x[1] > 1) r = r + " " + tens[x[1] - 2];
-if (x[2] > 0) r = r + " " + ones[x[2]-1];
+if (x[1] > 1) {
+r = r + tens[x[1] - 2];
+if (x[2] > 0) r = r + splt;
+} //if
+if (x[2] > 0) r = r + ones[x[2]-1];
 } //if
 return r;
 }, //get3Words
@@ -57,11 +61,10 @@ x = splitNumber(x);
 var ptr = -1,
 tmp,
 r,
-punc = ",";
-if (skipPunctuation) punc = "";
+punc = skipPunctuation ? "" : ",";
 r="";
 for (i = 0; i < x.length; i++) {
-tmp = get3Words(x[i]);
+tmp = get3Words(x[i], skipPunctuation);
 if (ptr >= 0) tmp = tmp + " " + groups[ptr] + punc;
 ptr++;
 if (ptr >= groups.length) ptr--;

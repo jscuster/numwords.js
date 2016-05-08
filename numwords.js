@@ -43,8 +43,7 @@ return res;
 get3Words = function(x, l3, skipPunctuation) {
 var r = "",
 splt = skipPunctuation ? " " : "-";
-if (x[0] > 0) r=r + ones[x[0]-1] + " ";
-if (x[0] > 0 || l3) r=r + "hundred ";
+if (x[0] > 0) r=r + ones[x[0]-1] + " hundred ";
 if (x[1] === 1) {
 r = r + ones[x[2] + 9] + " ";
 } else {

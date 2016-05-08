@@ -1,3 +1,7 @@
+//Copyright 2016, Jason Custer
+// Released under the MIT License. 
+//Enjoy.
+
 var number2Words = (function(x) {
 var sounds = {},
 ones = [],

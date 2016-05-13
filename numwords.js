@@ -57,6 +57,7 @@ return r.trim();
 }, //get3Words
 
 getWords = function(x, skipPunctuation) {
+if (x === 0 || x === "0") return "zero"; //special case.
 x = splitNumber(x);
 var ptr = -1,
 tmp,
